@@ -78,8 +78,7 @@ public class BookController {
         System.out.println("queryBookName => " + queryBookName);
         Books books = bookService.queryBookByName(queryBookName);
         System.out.println("books => " + books);
-        System.out.println("hot-fix => " + books);
-        List<Books> list = new ArrayList<>();
+        List<Books> list = new ArrayList<Books>();
         list.add(books);
 
         if(books == null){
