@@ -78,7 +78,8 @@ public class BookController {
         System.out.println("queryBookName => " + queryBookName);
         Books books = bookService.queryBookByName(queryBookName);
         System.out.println("books => " + books);
-        List<Books> list = new ArrayList<Books>();
+        System.out.println("master => " + books);
+        List<Books> list = new ArrayList<>();
         list.add(books);
 
         if(books == null){
